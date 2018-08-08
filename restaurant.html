@@ -36,8 +36,8 @@
       <img id="restaurant-img" class="restaurant-img">
       <p id="restaurant-cuisine" class="restaurant-cuisine"></p>
       <!-- Beginning map -->
-      <section id="map-container" class="map-container">
-        <div id="map" class="map"></div>
+      <section id="map-container" class="map-container" aria-hidden="true">
+        <div id="map" class="map" role="application"></div>
       </section>
       <!-- End map -->
 
@@ -58,7 +58,11 @@
 
   <!-- Beginning footer -->
   <footer id="footer" class="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a>
+    All Rights Reserved.
   </footer>
   <!-- End footer -->
 

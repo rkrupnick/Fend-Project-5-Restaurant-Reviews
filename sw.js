@@ -1,4 +1,4 @@
-var cacheID = 'reviews-static-v001';
+var cacheID = 'restaurant-reviews-static-v001';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -30,4 +30,20 @@ self.addEventListener('install', function(event) {
     })
   );
 });
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          return cacheName.startsWith('restaurant-reviews-') &&
+            cacheName !== cacheID;
+        }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
+});
+
 

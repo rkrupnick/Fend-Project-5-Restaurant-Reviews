@@ -17,17 +17,17 @@
   <main id="main-content" class="main-content">
     <!-- Beginning Map -->
     <section id="map-container" class="map-container">
-      <div id="map" class="map"></div>
+      <div aria-label="google maps" role="application" id="map" class="map"></div>
     </section>
     <!-- End Map -->
     <section id="restaurants-container">
-      <div class="filter-options">
+      <div class="filter-options" role="search">
         <h2>Filter Results</h2>
         <div class="filter-selections">
-          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby='filterResults'>
             <option value="all">All Neighborhoods</option>
           </select>
-          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby='filterResults'>
             <option value="all">All Cuisines</option>
           </select>
         </div>
