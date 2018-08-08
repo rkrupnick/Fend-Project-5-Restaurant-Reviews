@@ -1,4 +1,4 @@
-var cacheID = 'restaurant-reviews-static-v001';
+var cacheID = 'restaurant-reviews-static-v002';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

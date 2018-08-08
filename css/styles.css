@@ -225,7 +225,7 @@ header h1 a {
   font-size: 14pt;
 }
 
-.restaurants-list li button {
+.restaurants-list li a {
   background-color: #6B4600;
   border-bottom: 3px solid #eee;
   color: #fff;
